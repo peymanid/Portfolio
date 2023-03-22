@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #130a14;
+}
+
+nav .nav-section-wrapper div p{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+nav .nav-section-wrapper div:not(:last-child) p::after{
+    content: "";
+    position: absolute;
+    /* z-index: 1; */
+    bottom: 0%;
+    height: 2px;
+    width: 0px;
+    background-color: white;
+    transition: all 500ms ease;
+}
+
+
+nav .nav-section-wrapper div p:hover::after{
+    width: 40px;
+}
+
+/* ::-webkit-scrollbar{
+    position: relative;
+    z-index: -1;
+    width: 8px;
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #842cdd;
+} */
