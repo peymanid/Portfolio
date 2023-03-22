@@ -21,7 +21,7 @@ const Header = () => {
         </button>
         
       </div>
-      <div className="w-[50%] h-full">
+      <div className="w-[30%] h-full">
         <figure className="w-[90%] ml-auto h-full relative ">
             <Image src={img} fill className="rounded-l-[40px]"/>
         </figure>
