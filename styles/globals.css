@@ -1,66 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
 
-:root{
-    --light-bg: #d8d8d8f9;
-    --dark-bg: #130a14;
-}
 @font-face {
-    font-family: "Astro";
-    src: url('/fonts/AstroSpace.otf');
-}
-body{
-    /* font-family: "Astro"; */
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--dark-bg);
-    transition: background-color 500ms ease;
+  font-family: "Astro";
+  src: url("/fonts/AstroSpace.otf");
 }
 
-nav .nav-section-wrapper div p{
-    display: flex;
-    justify-content: center;
+body {
+  /* font-family: "Astro"; */
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  transition: all 500ms ease;
 }
-nav .nav-section-wrapper div:not(:last-child) p::after{
-    content: "";
-    position: absolute;
-    bottom: 0%;
-    height: 2px;
-    width: 0px;
-    background-color: white;
-    transition: all 500ms ease;
+
+nav .nav-section-wrapper div p {
+  display: flex;
+  justify-content: center;
 }
-nav .nav-section-wrapper div:hover p::after{
-    width: 40px;
+nav .nav-section-wrapper div:not(:last-child) p::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  height: 2px;
+  width: 0px;
+  background-color: black;
+  transition: all 500ms ease;
 }
-.contact{
-    position: relative;
-    cursor: pointer;
+.dark nav .nav-section-wrapper div:not(:last-child) p::after {
+  background-color: white;
+}
+nav .nav-section-wrapper div:hover p::after {
+  width: 40px;
+}
+.contact {
+  position: relative;
+  cursor: pointer;
 }
 .contact p {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
-.contact::after{
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    bottom: 0%;
-    right: 0%;
-    left: 100%;
-    background-color:#852cdd ;
-    transition: all 400ms ease;
+.contact::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 100%;
+  background-color: #a200ff;
+  transition: all 400ms ease;
 }
-.contact:hover::after{
-    left: 0%;
+.contact:hover::after {
+  left: 0%;
 }
 
-.astronaut-img{
-    box-shadow:  -50px 0px 50px black,-50px 0px 100px black, -50px 0px 100px #842cdd;
+.astronaut-img {
+  transition: all 500ms ease;
+}
+.dark .astronaut-img {
+  box-shadow: -50px 20px 50px black, -50px 20px 100px black,
+    -50px 20px 100px #842cdd;
 }
 /* ::-webkit-scrollbar{
     position: relative;

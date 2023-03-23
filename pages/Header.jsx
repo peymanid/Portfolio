@@ -7,9 +7,8 @@ import img from "@/public/Space-Illustration.png";
 import { TypeAnimation } from "react-type-animation";
 
 const Header = ({ ToggleMode, setToggleMode }) => {
-  console.log(ToggleMode);
   return (
-    <div className="flex h-[88vh] items-center py-5">
+    <div className="flex h-[88vh] items-center py-5 mt-[10vh]">
       <div className="text-white w-[50%] h-full p-10">
         <div className="h-[20%] ml-2">
           {ToggleMode ? (
@@ -28,7 +27,7 @@ const Header = ({ ToggleMode, setToggleMode }) => {
         </div>
         <div className={`h-[80%]`}>
           <p className="text-[#842cdd] pl-1">Developer</p>
-          <p className={`${ToggleMode ? "text-white" : "text-gray-700"}`}>
+          <p className={`dark:text-white text-gray-700`}>
             <TypeAnimation
               sequence={["Peyman", 900, "Esmaeilpour", 900]}
               repeat={Infinity}
