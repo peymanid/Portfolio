@@ -1,18 +1,39 @@
 import Card from "react-animated-3d-card";
 import stack from "@/public/stack.json";
 import Image from "next/image";
+import { useRef, useEffect } from "react";
 
 const Stack = () => {
-  console.log(stack);
+  const observer = useRef();
+  const stackSection = useRef();
+  useEffect(() => {
+    observer.current = new IntersectionObserver(
+      (elements) => {
+        elements.forEach((element) => {
+          if (element.isIntersecting)
+            stackSection.current.classList.add("active");
+          else stackSection.current.classList.remove("active");
+        });
+      },
+      {
+        threshold: 0.5,
+      }
+    );
+    if (stackSection) observer.current.observe(stackSection.current);
+  }, []);
   return (
-    <div className="w-[97%] min-h-screen flex flex-wrap items-center justify-start">
+    <div
+      className="stack-section w-[97%] min-h-screen flex flex-wrap items-center justify-start"
+      data-stack
+      ref={stackSection}
+    >
       <div className="w-[65%] flex flex-wrap items-center justify-center">
-        {stack.map((item, index) => {
+        {stack.slice(0, 8).map((item, index) => {
           return (
-            <div className="mr-5 my-5">
+            <div key={index} className="w-[20%] mr-5 my-5">
               <Card
                 style={{
-                  width: "150px",
+                  width: "100%",
                   backgrgoundColor: "black",
                   height: "200px",
                   cursor: "pointer",
@@ -33,6 +54,11 @@ const Stack = () => {
             </div>
           );
         })}
+      </div>
+      <div className="w-[35%]">
+        <h1 className="stack-title dark:text-white text-black uppercase text-7xl text-center">
+          Stack
+        </h1>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [ToggleMode, setToggleMode] = useState(true);
-  const [ToggleSide, setToggleSide] = useState(false);
+  const [ToggleContact, setToggleContact] = useState(false);
 
   useEffect(() => {
     if (ToggleMode) document.documentElement.classList.add("dark");
@@ -18,8 +18,8 @@ export default function Home() {
       className="flex w-full min-h-screen overflow-hidden"
     >
       <div className={`transition-all w-[93%]`}>
-        <Navbar ToggleMode={ToggleMode} setToggleMode={setToggleMode} />
-        <Header ToggleMode={ToggleMode} setToggleMode={setToggleMode} />
+        <Navbar ToggleMode={ToggleMode} setToggleMode={setToggleMode} ToggleContact={ToggleContact} setToggleContact={setToggleContact} />
+        <Header ToggleMode={ToggleMode} setToggleMode={setToggleMode} ToggleContact={ToggleContact} />
         <Stack />
       </div>
 

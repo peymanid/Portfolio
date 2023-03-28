@@ -65,6 +65,38 @@ nav .nav-section-wrapper div:hover p::after {
   box-shadow: -50px 20px 50px black, -50px 20px 100px black,
     -50px 20px 100px #842cdd;
 }
+
+.parallax-card {
+  width: 100%;
+}
+.stack-section .stack-title {
+  translate: 150px 0px;
+  opacity: 0;
+  transition: all 800ms ease;
+}
+.stack-section.active .stack-title {
+  translate: 0px 0px;
+  opacity: 1;
+}
+.about-wrapper {
+  translate: 0px 0px;
+  opacity: 1;
+  transition: all 800ms ease;
+}
+.about-container.transition-activate .about-wrapper{
+  
+  opacity: 0;
+  translate: -900px 0px;
+}
+.contact-wrapper{
+  opacity: 0;
+  translate: 900px 0px;
+  transition: all 800ms ease;
+}
+.about-container.transition-activate .contact-wrapper{
+  opacity: 1;
+  translate: 0px 0px;
+}
 /* ::-webkit-scrollbar{
     position: relative;
     z-index: -1;
