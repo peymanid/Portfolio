@@ -1,9 +1,9 @@
-const Navbar = ({
-  ToggleMode,
-  setToggleMode,
-  ToggleContact,
-  setToggleContact,
-}) => {
+import {ModeContext} from "./_app.js";
+import { useContext } from "react";
+
+const Navbar = () => {
+  const {ToggleMode, setToggleMode,ToggleContact, setToggleContact} = useContext(ModeContext)
+
   const stackDisplay = (e) => {
     console.log(e);
     document.querySelector(`[data-${e}]`).scrollIntoView({

@@ -10,7 +10,8 @@ const nextConfig = {
       "cdn1.iconfinder.com",
       "cdn4.iconfinder.com",
       "www.mysql.com",
-      "codetru.com"
+      "codetru.com",
+      "dotnettrickscloud.blob.core.windows.net"
     ],
   },
 };

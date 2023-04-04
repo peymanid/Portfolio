@@ -6,6 +6,7 @@ import { useRef, useEffect } from "react";
 const Stack = () => {
   const observer = useRef();
   const stackSection = useRef();
+
   useEffect(() => {
     observer.current = new IntersectionObserver(
       (elements) => {
@@ -21,6 +22,7 @@ const Stack = () => {
     );
     if (stackSection) observer.current.observe(stackSection.current);
   }, []);
+
   return (
     <div
       className="stack-section w-[97%] min-h-screen flex flex-wrap items-center justify-start"
