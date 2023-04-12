@@ -35,22 +35,31 @@ const SideNav = ({ children }) => {
         <div
           className={` h-[50px] w-[60px] flex items-center justify-center cursor-pointer hover:text-[#962fbf]`}
         >
+          <a href="https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y=">
           <AiOutlineInstagram size={ToggleSide ? 35 : 23} />
+          </a>
         </div>
         <div
           className={`h-[50px] w-[60px] flex items-center justify-center cursor-pointer hover:text-[#0072b1]`}
         >
+          <a href="https://www.linkedin.com/in/peyman-esmailpoor/">
           <AiOutlineLinkedin size={ToggleSide ? 35 : 23} />
+          </a>
         </div>
         <div
           className={`h-[50px] w-[60px] flex items-center justify-center cursor-pointer hover:text-[#4267B2]`}
         >
+          <a href="http://www.google.com">
           <FiFacebook size={ToggleSide ? 35 : 23} />
+          </a>
         </div>
         <div
           className={`h-[50px] w-[60px] flex items-center justify-center cursor-pointer hover:text-[#1DA1F2]`}
         >
-          <FiTwitter size={ToggleSide ? 32 : 23} />
+            <a href="https://stackoverflow.com/questions/57200956/add-link-to-font-awesome-icon-in-reactjs">
+            <FiTwitter size={ToggleSide ? 32 : 23}></FiTwitter>
+            </a>
+            
         </div>
       </div>
     </div>
