@@ -30,7 +30,7 @@ export default function Home() {
               </p>
               <p className="text-[#8a878a] mb-5 pl-1">
                 Coding enthusiast and my development process involves
-                understanding the client's requirements, designing capable
+                understanding the client&apos;s requirements, designing capable
                 architecture, and creating high quality clean, and maintainable
                 code. I love staying up-to-date with the latest Thecnology and
                 trends in the industry.
