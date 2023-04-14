@@ -1,0 +1,13 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/CompleteStack": "pages/CompleteStack.html",
+  "/Header": "pages/Header.html",
+  "/Navbar": "pages/Navbar.html",
+  "/SideNav": "pages/SideNav.html",
+  "/Stack": "pages/Stack.html",
+  "/api/hello": "pages/api/hello.js",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

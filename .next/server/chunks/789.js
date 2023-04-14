@@ -1,0 +1,14 @@
+"use strict";
+exports.id = 789;
+exports.ids = [789];
+exports.modules = {
+
+/***/ 789:
+/***/ ((module) => {
+
+module.exports = JSON.parse('[{"lang":"Html","img":"https://www.w3.org/html/logo/downloads/HTML5_Badge_128.png"},{"lang":"Css","img":"https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png"},{"lang":"Bootstrap","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/180px-Bootstrap_logo.svg.png"},{"lang":"Javascript","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"},{"lang":"ReactJS","img":"https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-256.png"},{"lang":"NextJS","img":"https://cdn.thenewstack.io/media/2021/06/7c546588-nextjs.png"},{"lang":"Oracle Sql","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oracle_logo.svg/768px-Oracle_logo.svg.png"},{"lang":"Python","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/172px-Python-logo-notext.svg.png?20220821155029"},{"lang":"C++","img":"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/459px-ISO_C%2B%2B_Logo.svg.png?20170928190710"},{"lang":"C#","img":"https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png?20180210215736"},{"lang":"ASP.Net MVC","img":"https://dotnettrickscloud.blob.core.windows.net/uploads/CourseImages/becomeanaspnetmvcdeveloper-mobile.png"},{"lang":"Java","img":"https://www.java.com/_cache_0dd7/_themesdelivery/JCOM_Base_Theme/assets/img/Java-horz-wht.svg"}]');
+
+/***/ })
+
+};
+;
