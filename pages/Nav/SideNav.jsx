@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { AiOutlineInstagram, AiOutlineLinkedin } from "react-icons/ai";
 import { FiFacebook, FiTwitter } from "react-icons/fi";
 import { BsGrid3X3GapFill } from "react-icons/bs";
-import { ModeContext } from "./_app.js";
+import { ModeContext } from "/pages/_app.js";
 
 const SideNav = ({ children }) => {
   const { ToggleSide, setToggleSide } = useContext(ModeContext);

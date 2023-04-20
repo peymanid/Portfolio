@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const useSmallScreen = () => {
   const [state, setState] = useState();
 
   useEffect(() => {
-    const Resize = setState(window.innerWidth)
+    const Resize = () =>  setState(window.innerWidth)
 
     Resize()
     window.addEventListener("resize", Resize)
