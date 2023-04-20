@@ -1,6 +1,5 @@
 import Header from "./Header";
 import SideNav from "./SideNav";
-import Card from "react-animated-3d-card";
 import stack from "@/public/stack.json";
 import Image from "next/image";
 import { TfiHome } from "react-icons/tfi";
@@ -20,27 +19,7 @@ const CompleteStack = () => {
             {stack.map((item, index) => {
               return (
                 <div key={index} className="w-[20%] mr-5 my-5">
-                  <Card
-                    style={{
-                      width: "100%",
-                      backgrgoundColor: "black",
-                      height: "100px",
-                      cursor: "pointer",
-                      backgroundColor: "transparent",
-                    }}
-                  >
-                    <div className="w-full h-full flex items-center justify-center">
-                      <figure className="w-[50px] relative flex items-center justify-center">
-                        <Image
-                          className=""
-                          alt="language-img"
-                          src={item.img}
-                          width={100}
-                          height={100}
-                        />
-                      </figure>
-                    </div>
-                  </Card>
+                 
                 </div>
               );
             })}

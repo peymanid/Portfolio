@@ -20,7 +20,7 @@ nav .nav-section-wrapper div p {
   display: flex;
   justify-content: center;
 }
-nav .nav-section-wrapper div:not(:last-child) p::after {
+nav .nav-section-wrapper div:not(.large-hoverMode) p::after {
   content: "";
   position: absolute;
   bottom: 0%;
@@ -29,7 +29,7 @@ nav .nav-section-wrapper div:not(:last-child) p::after {
   background-color: black;
   transition: all 500ms ease;
 }
-.dark nav .nav-section-wrapper div:not(:last-child) p::after {
+.dark nav .nav-section-wrapper div:not(.large-hoverMode) p::after {
   background-color: white;
 }
 nav .nav-section-wrapper div:hover p::after {
@@ -43,7 +43,7 @@ nav .nav-section-wrapper div:hover p::after {
   position: relative;
   z-index: 2;
 }
-.contact::after {
+.large-hoverMode.contact::after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -54,7 +54,7 @@ nav .nav-section-wrapper div:hover p::after {
   background-color: #a200ff;
   transition: all 400ms ease;
 }
-.contact:hover::after {
+.large-hoverMode.contact:hover::after {
   left: 0%;
 }
 
@@ -70,7 +70,7 @@ nav .nav-section-wrapper div:hover p::after {
   width: 100%;
 }
 .stack-section .stack-title {
-  translate: 150px 0px;
+  translate: 150px 0px;    
   opacity: 0;
   transition: all 800ms ease;
 }
@@ -83,17 +83,16 @@ nav .nav-section-wrapper div:hover p::after {
   opacity: 1;
   transition: all 800ms ease;
 }
-.about-container.transition-activate .about-wrapper{
-  
+.about-container.transition-activate .about-wrapper {
   opacity: 0;
   translate: -900px 0px;
 }
-.contact-wrapper{
+.contact-wrapper {
   opacity: 0;
   translate: 900px 0px;
   transition: all 800ms ease;
 }
-.about-container.transition-activate .contact-wrapper{
+.about-container.transition-activate .contact-wrapper {
   opacity: 1;
   translate: 0px 0px;
 }
@@ -106,3 +105,11 @@ nav .nav-section-wrapper div:hover p::after {
 ::-webkit-scrollbar-thumb{
     background-color: #842cdd;
 } */
+
+.dark .eachlang {
+  box-shadow: 0px 0px 50px #130a14, 0px 0px 50px #432346;
+  transition: box-shadow 150ms ease;
+}
+.eachlang {
+  box-shadow: 0px 0px 50px #d8d8d8, 0px 0px 50px #a4a4a4;
+}

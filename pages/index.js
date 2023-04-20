@@ -1,20 +1,23 @@
-import Header from "./Header";
-import Navbar from "./Navbar";
-import SideNav from "./SideNav";
-import Stack from "./Stack";
+import Header from "./Header/Header";
+import Navbar from "./Nav/Navbar";
+import SideNav from "./Nav/SideNav";
+import Stack from "./Stack/Stack";
 import { AiFillGithub } from "react-icons/ai";
 import { TypeAnimation } from "react-type-animation";
 import { BsStack } from "react-icons/bs";
 import { useRouter } from "next/router";
 import { ModeContext } from "./_app.js";
 import { useContext } from "react";
+import { useSmallScreen } from "@/Hooks/useSmallScreen";
+
 export default function Home() {
   const router = useRouter();
-  const { ToggleSide, setToggleSide } = useContext(ModeContext);
+  const isSmallScreen = useSmallScreen()
+  const { ToggleSide } = useContext(ModeContext);
 
   return (
     <div className="flex w-full min-h-screen overflow-hidden">
-      <div className={`transition-all  w-[93%]`}>
+      <div className={`transition-all  lg:w-[93%]`}>
         <Navbar />
         <Header>
           <div className="overflow-hidden w-full h-full flex relative">
@@ -22,13 +25,14 @@ export default function Home() {
               <p className="text-[#842cdd] pl-1">Developer</p>
               <p className={`dark:text-white text-gray-700`}>
                 <TypeAnimation
+                  className="text-4xl lg:text-5xl"
                   sequence={["Peyman", 900, "Esmaeilpour", 900]}
                   repeat={Infinity}
                   speed={40}
-                  style={{ fontSize: "50px", display: "inline-block" }}
+                  style={{ display: "inline-block" }}
                 />
               </p>
-              <p className="text-[#8a878a] mb-5 pl-1">
+              <p className="text-[#8a878a] text-md mb-5 pl-1">
                 Coding enthusiast and my development process involves
                 understanding the client&apos;s requirements, designing capable
                 architecture, and creating high quality clean, and maintainable
@@ -53,7 +57,7 @@ export default function Home() {
                   placeholder="email"
                 />
                 <textarea
-                  className="p-2 resize-none bg-transparent border-b-[.5px] outline-none h-[30%] outline-none"
+                  className="p-2 resize-none bg-transparent border-b-[.5px] h-[30%] outline-none"
                   type=""
                   placeholder="Enter Message.."
                 />
@@ -64,12 +68,14 @@ export default function Home() {
         </Header>
         <Stack />
       </div>
-      <SideNav>
-        <div className="flex flex-col items-center">
-          <BsStack size={35} onClick={() => router.push("/CompleteStack")} />
-          <h1 className={`${ToggleSide ? "" : "hidden"}`}>Full Stack</h1>
-        </div>
-      </SideNav>
+      {!isSmallScreen && (
+        <SideNav>
+          <div className="flex flex-col items-center">
+            <BsStack size={35} onClick={() => router.push("/CompleteStack")} />
+            <h1 className={`${ToggleSide ? "" : "hidden"}`}>Full Stack</h1>
+          </div>
+        </SideNav>
+      )}
     </div>
   );
 }
