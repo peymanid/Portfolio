@@ -1,15 +1,15 @@
-import Header from "./Header";
-import SideNav from "./SideNav";
+import Header from "/pages/Header";
+import SideNav from "/pages/SideNav";
 import stack from "@/public/stack.json";
-import Image from "next/image";
+import ThreeDStack from "./3DStack";
 import { TfiHome } from "react-icons/tfi";
 import { useRouter } from "next/router";
-import { ModeContext } from "./_app.js";
+import { ModeContext } from "/pages/_app.js";
 import { useContext } from "react";
 
 const CompleteStack = () => {
   const router = useRouter();
-  const { ToggleSide, setToggleSide } = useContext(ModeContext);
+  const { ToggleSide } = useContext(ModeContext);
 
   return (
     <div>
@@ -17,11 +17,7 @@ const CompleteStack = () => {
         <Header>
           <div className="flex flex-wrap">
             {stack.map((item, index) => {
-              return (
-                <div key={index} className="w-[20%] mr-5 my-5">
-                 
-                </div>
-              );
+              return <ThreeDStack key={index} item={item} index={index} />;
             })}
           </div>
         </Header>
