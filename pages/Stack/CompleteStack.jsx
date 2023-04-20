@@ -1,5 +1,5 @@
-import Header from "/pages/Header";
-import SideNav from "/pages/SideNav";
+import Header from "/pages/Header/Header";
+import SideNav from "/pages/Nav/SideNav";
 import stack from "@/public/stack.json";
 import ThreeDStack from "./3DStack";
 import { TfiHome } from "react-icons/tfi";
