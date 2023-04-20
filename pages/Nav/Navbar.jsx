@@ -41,6 +41,7 @@ const Navbar = () => {
           onClick={() => {
             stackDisplay("about");
             setToggleContact(false);
+            isSmallScreen && setNavToggle(false)
           }}
         >
           <p className="relative">About</p>
@@ -50,6 +51,7 @@ const Navbar = () => {
           onClick={() => {
             stackDisplay("stack");
             setToggleContact(false);
+            isSmallScreen && setNavToggle(false)
           }}
         >
           <p className="relative">Stack</p>
@@ -59,6 +61,7 @@ const Navbar = () => {
           onClick={() => {
             stackDisplay("about");
             setToggleContact(true);
+            isSmallScreen && setNavToggle(false)
           }}
         >
           <p className="relative">Contact</p>
