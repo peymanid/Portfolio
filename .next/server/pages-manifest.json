@@ -1,14 +1,6 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/Header/Header": "pages/Header/Header.html",
-  "/Nav/Navbar": "pages/Nav/Navbar.html",
   "/_document": "pages/_document.js",
-  "/Nav/SideNav": "pages/Nav/SideNav.html",
-  "/Stack/3DStack": "pages/Stack/3DStack.html",
-  "/Stack/CompleteStack": "pages/Stack/CompleteStack.html",
-  "/Stack/Stack": "pages/Stack/Stack.html",
-  "/api/hello": "pages/api/hello.js",
-  "/": "pages/index.html",
-  "/404": "pages/404.html"
+  "/": "pages/index.js"
 }

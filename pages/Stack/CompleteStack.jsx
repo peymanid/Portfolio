@@ -15,7 +15,7 @@ const CompleteStack = () => {
     <div>
       <div className={`transition-all w-[93%]`}>
         <Header>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center">
             {stack.map((item, index) => {
               return <ThreeDStack key={index} item={item} index={index} />;
             })}
