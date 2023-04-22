@@ -44,7 +44,7 @@ const MainHeader = () => {
               <input
                 className="p-2 bg-transparent border-b-[.5px] outline-none"
                 type=""
-                placeholder="email"
+                placeholder="Email"
               />
               <textarea
                 className="p-2 resize-none bg-transparent border-b-[.5px] h-[30%] outline-none"
@@ -83,22 +83,22 @@ const Socials = () => {
       >
         <AiFillGithub size={40} />
       </a>
-      {isSmallScreen && (
-        <>
-          <a
-            href={"https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y="}
-            class={`text-[#962fbf]`}
-          >
-            <AiOutlineInstagram size={40} />
-          </a>
-          <a
-            href={"https://www.linkedin.com/in/peyman-esmailpoor/"}
-            className={"text-[#0072b1]"}
-          >
-            <AiOutlineLinkedin size={40} />
-          </a>
+      <a
+        href={"https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y="}
+        class={`text-[#962fbf]`}
+      >
+        <AiOutlineInstagram size={40} />
+      </a>
+      <a
+        href={"https://www.linkedin.com/in/peyman-esmailpoor/"}
+        className={"text-[#0072b1]"}
+      >
+        <AiOutlineLinkedin size={40} />
+      </a>
+      {/* {isSmallScreen && (
         </>
-      )}
+        <>
+      )} */}
     </>
   );
 };
