@@ -26,7 +26,7 @@ const Navbar = () => {
 
       <div
         className={`flex flex-col justify-center lg:justify-end items-center transition-all ${
-          isSmallScreen ? "dark:bg-black bg-[#d8d8d8]" : "bg-transparent"
+          isSmallScreen ? "dark:bg-[#1d2025] bg-[#d8d8d8]" : "bg-transparent"
         } lg:flex-row nav-section-wrapper overflow-hidden relative z-2 ${
           isSmallScreen ? navToggle ? "w-screen" : "w-[0px]" : "lg:w-[97vw]"
         }`}
