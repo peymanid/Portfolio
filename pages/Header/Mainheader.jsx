@@ -86,12 +86,14 @@ const Socials = () => {
       <a
         href={"https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y="}
         class={`text-[#962fbf]`}
+        target="_blank"
       >
         <AiOutlineInstagram size={40} />
       </a>
       <a
         href={"https://www.linkedin.com/in/peyman-esmailpoor/"}
         className={"text-[#0072b1]"}
+        target="_blank"
       >
         <AiOutlineLinkedin size={40} />
       </a>
