@@ -28,7 +28,7 @@ const Navbar = () => {
         className={`flex flex-col justify-center lg:justify-end items-center transition-all ${
           isSmallScreen ? "dark:bg-[#1d2025] bg-[#d8d8d8]" : "bg-transparent"
         } lg:flex-row nav-section-wrapper overflow-hidden relative z-2 ${
-          isSmallScreen ? navToggle ? "w-screen" : "w-[0px]" : "lg:w-[97vw]"
+          isSmallScreen ? navToggle ? "w-[75vw]" : "w-[0px]" : "lg:w-[97vw]"
         }`}
       >
         <div className="absolute top-10 left-10 ">
