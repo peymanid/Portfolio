@@ -30,7 +30,7 @@ const MainHeader = () => {
               Coding enthusiast and my development process involves
               understanding the client&apos;s requirements, designing capable
               architecture, and creating high quality clean, and maintainable
-              code. I love staying up-to-date with the latest Technology and
+              code. I love staying up-to-date with the latest technology and
               trends in the industry.
             </p>
 
