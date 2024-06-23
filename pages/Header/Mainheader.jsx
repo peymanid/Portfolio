@@ -22,7 +22,7 @@ const MainHeader = () => {
                 className="text-4xl lg:text-5xl"
                 sequence={["میم مثل", 900, "چشات", 900]}
                 repeat={Infinity}
-                speed={40}
+                speed={20}
                 style={{ display: "inline-block" }}
               />
             </p>
