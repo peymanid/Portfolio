@@ -86,7 +86,7 @@ const Socials = () => {
       {isSmallScreen && (
         <>
           <a
-            href={"https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y="}
+            href={"https://www.instagram.com/peyman.esmp?igsh=eGJ5YWRyc21xNjNk&utm_source=qr"}
             class={`text-[#962fbf]`}
             target="_blank"
           >
