@@ -33,7 +33,7 @@ const SideNav = ({ children }) => {
         } w-[50%]`}
       >
         <Socials
-          link={"https://instagram.com/tolerancing?igshid=YmMyMTA2M2Y="}
+          link={"https://www.instagram.com/peyman.esmp/?igsh=eGJ5YWRyc21xNjNk&utm_source=qr"}
           style={` h-[50px] w-[60px] flex items-center justify-center cursor-pointer hover:text-[#962fbf]`}
         >
           <AiOutlineInstagram size={ToggleSide ? 35 : 23} />
