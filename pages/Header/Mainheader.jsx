@@ -20,7 +20,7 @@ const MainHeader = () => {
             <p className={`dark:text-white text-gray-700`}>
               <TypeAnimation
                 className="text-4xl lg:text-5xl"
-                sequence={["میم مثل", 900, "چشات", 900]}
+                sequence={["Peyman", 900, "Esmaeilpour", 900]}
                 repeat={Infinity}
                 speed={20}
                 style={{ display: "inline-block" }}
